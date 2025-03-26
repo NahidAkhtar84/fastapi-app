@@ -5,7 +5,7 @@ FROM python:3.10
 WORKDIR /app
 
 # Copy application files
-COPY main.py requirements.txt ./
+COPY . .
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt

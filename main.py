@@ -31,5 +31,5 @@ def db_check():
         conn.close()
         return {"message": "Database connection successful!"}
     except Exception as e:
-        return {"error": str(e)}
+        return {"Database connection failed. Reason: ": str(e)}
 
